@@ -1,0 +1,21 @@
+/ SEO: PASS
+/agents-ia SEO: PASS
+/automatisation SEO: PASS
+/marketing-digital SEO: PASS
+/sites-acquisition SEO: PASS
+/solutions SEO: PASS
+/a-propos SEO: PASS
+/contact SEO: PASS
+/mentions-legales SEO: PASS
+/confidentialite SEO: PASS
+/cookies SEO: PASS
+robots + sitemap + 404 + health + www redirect preserving path and query: PASS
+audit validation + origin + persistence + idempotency + pending notification + rate limit: PASS
+Production Next.js build + TypeScript: PASS
+Storage persists across processes and duplicate IDs are unique: PASS
+Mocked Google relay signing, duplicate suppression, failure and retry: PASS
+Original design CSS byte comparison: IDENTICAL
+Browser 1440px: navigation, solution preselection, consent, mocked submission, pending status, no overflow or JS errors: PASS
+Browser 760px: navigation, solution preselection, consent, mocked submission, pending status, no overflow or JS errors: PASS
+Browser 390px: navigation, solution preselection, consent, mocked submission, pending status, no overflow or JS errors: PASS
+Live email delivery, historical lead migration, Render deployment, DNS/TLS cutover and Google Search Console: NOT YET VERIFIED

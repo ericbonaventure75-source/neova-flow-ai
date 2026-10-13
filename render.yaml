@@ -1,0 +1,21 @@
+services:
+  - type: web
+    name: neova-flow-ai
+    runtime: node
+    plan: starter
+    buildCommand: corepack enable && pnpm install --frozen-lockfile && pnpm build
+    startCommand: pnpm start
+    healthCheckPath: /api/health
+    disk:
+      name: audit-data
+      mountPath: /var/data
+      sizeGB: 1
+    envVars:
+      - key: NODE_VERSION
+        value: 24.19.0
+      - key: AUDIT_DB_PATH
+        value: /var/data/audits.sqlite
+      - key: AUDIT_RELAY_URL
+        value: https://script.google.com/macros/s/AKfycbyYIKaDBkJpRdWpTIGsar520oyDS1_NmVsQW3sHVrKWnJ3HgoHM6JDjYFL4FY-KHjcm/exec
+      - key: AUDIT_RELAY_KEY
+        sync: false
